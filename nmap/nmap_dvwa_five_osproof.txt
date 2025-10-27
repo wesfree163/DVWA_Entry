@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Sun Oct 26 21:10:23 2025 as: /usr/lib/nmap/nmap --privileged -O -sV -p 80,443 -oN nmap_dvwa_five_osproof.txt demo.testfire.net
+Nmap scan report for demo.testfire.net (65.61.137.117)
+Host is up (0.046s latency).
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Apache Tomcat/Coyote JSP engine 1.1
+443/tcp open  ssl/http Apache Tomcat/Coyote JSP engine 1.1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2008|7 (87%)
+OS CPE: cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_8 cpe:/o:microsoft:windows_7
+Aggressive OS guesses: Microsoft Windows Server 2008 R2 or Windows 8 (87%), Microsoft Windows Server 2008 R2 or Windows 7 SP1 (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 26 21:10:41 2025 -- 1 IP address (1 host up) scanned in 17.91 seconds
