@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:36:58 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-upnp-info -oN nmap_scan/upnp google-gruyere.appspot.com
+Pre-scan script results:
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Microsoft-Windows/10.0 UPnP/1.0 UPnP-Device-Host/1.0
+|       Location: http://192.168.1.178:2869/upnphost/udhisapi.dll?content=uuid:da04b745-f970-4278-a09f-0e27d8cdc862
+|         Webserver: Microsoft-Windows/10.0 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0
+|         Name: XBOX
+|         Manufacturer: Microsoft Corporation
+|_        Model Name: Xbox One
+Nmap scan report for google-gruyere.appspot.com (173.194.204.153)
+Host is up (0.031s latency).
+Other addresses for google-gruyere.appspot.com (not scanned): 2607:f8b0:400d:c07::99
+rDNS record for 173.194.204.153: qb-in-f153.1e100.net
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 11:37:06 2025 -- 1 IP address (1 host up) scanned in 7.48 seconds

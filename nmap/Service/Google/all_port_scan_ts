@@ -1,0 +1,12 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:25:00 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p- -oN nmap_scan/all_port_scan_ts google-gruyere.appspot.com
+Nmap scan report for google-gruyere.appspot.com (173.194.204.153)
+Host is up (0.022s latency).
+Other addresses for google-gruyere.appspot.com (not scanned): 2607:f8b0:400d:c07::99
+rDNS record for 173.194.204.153: qb-in-f153.1e100.net
+Not shown: 65532 filtered tcp ports (no-response)
+PORT    STATE  SERVICE
+80/tcp  open   http
+113/tcp closed ident
+443/tcp open   https
+
+# Nmap done at Tue Oct 28 11:36:04 2025 -- 1 IP address (1 host up) scanned in 664.63 seconds

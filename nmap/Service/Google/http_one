@@ -1,0 +1,17 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:37:15 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-security-headers,http-csrf -oN nmap_scan/http_one google-gruyere.appspot.com
+Nmap scan report for google-gruyere.appspot.com (173.194.204.153)
+Host is up (0.028s latency).
+Other addresses for google-gruyere.appspot.com (not scanned): 2607:f8b0:400d:c07::99
+rDNS record for 173.194.204.153: qb-in-f153.1e100.net
+
+Bug in http-security-headers: no string output.
+PORT    STATE SERVICE
+80/tcp  open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+443/tcp open  https
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|_    HSTS not configured in HTTPS Server
+
+# Nmap done at Tue Oct 28 11:37:20 2025 -- 1 IP address (1 host up) scanned in 5.06 seconds

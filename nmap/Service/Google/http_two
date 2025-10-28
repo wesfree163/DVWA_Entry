@@ -1,0 +1,22 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:37:20 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script http-title,http-headers -oN nmap_scan/http_two google-gruyere.appspot.com
+Nmap scan report for google-gruyere.appspot.com (173.194.204.153)
+Host is up (0.029s latency).
+Other addresses for google-gruyere.appspot.com (not scanned): 2607:f8b0:400d:c07::99
+rDNS record for 173.194.204.153: qb-in-f153.1e100.net
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-headers: 
+|   cache-control: no-cache
+|   pragma: no-cache
+|   content-type: text/html; charset=utf-8
+|   x-cloud-trace-context: df9e1532ba1c444e1ca5a2d8f13d2271
+|   date: Tue, 28 Oct 2025 15:37:21 GMT
+|   server: Google Frontend
+|   Content-Length: 11506
+|   Connection: close
+|   
+|_  (Request type: GET)
+|_http-title: Web Application Exploits and Defenses
+
+# Nmap done at Tue Oct 28 11:37:21 2025 -- 1 IP address (1 host up) scanned in 0.70 seconds

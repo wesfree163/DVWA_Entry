@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:38:30 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-cert -oN nmap_scan/certification google-gruyere.appspot.com
+Nmap scan report for google-gruyere.appspot.com (173.194.204.153)
+Host is up (0.031s latency).
+Other addresses for google-gruyere.appspot.com (not scanned): 2607:f8b0:400d:c07::99
+rDNS record for 173.194.204.153: qb-in-f153.1e100.net
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-cert: Subject: commonName=*.appspot.com
+| Subject Alternative Name: DNS:*.appspot.com, DNS:appspot.com, DNS:*.de.r.appspot.com, DNS:*.df.r.appspot.com, DNS:*.an.r.appspot.com, DNS:*.dt.r.appspot.com, DNS:*.du.r.appspot.com, DNS:*.el.r.appspot.com, DNS:*.as.r.appspot.com, DNS:*.et.r.appspot.com, DNS:*.ts.r.appspot.com, DNS:*.lz.r.appspot.com, DNS:*.ew.r.appspot.com, DNS:*.nw.r.appspot.com, DNS:*.ey.r.appspot.com, DNS:*.ez.r.appspot.com, DNS:*.nz.r.appspot.com, DNS:*.oa.r.appspot.com, DNS:*.nn.r.appspot.com, DNS:*.rj.r.appspot.com, DNS:*.uc.r.appspot.com, DNS:*.tz.r.appspot.com, DNS:*.ue.r.appspot.com, DNS:*.uk.r.appspot.com, DNS:*.un.r.appspot.com, DNS:*.uw.r.appspot.com, DNS:*.wl.r.appspot.com, DNS:*.wm.r.appspot.com, DNS:*.wn.r.appspot.com, DNS:*.lm.r.appspot.com, DNS:*.em.r.appspot.com, DNS:*.km.r.appspot.com, DNS:*.pd.r.appspot.com, DNS:*.ui.r.appspot.com, DNS:thinkwithgoogle.com, DNS:*.thinkwithgoogle.com, DNS:thinkwithgoogle.goog, DNS:*.thinkwithgoogle.goog, DNS:withgoogle.com, DNS:*.withgoogle.com, DNS:api.projectshield.withgoogle.com, DNS:withyoutube.com, DNS:*.withyoutube.com, DNS:app.google, DNS:*.app.google
+| Issuer: commonName=WR2/organizationName=Google Trust Services/countryName=US
+| Public Key type: ec
+| Public Key bits: 256
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-10-01T14:31:44
+| Not valid after:  2025-12-24T14:31:43
+| MD5:   7876:448d:a768:96b2:e245:31ba:5c9f:cf99
+|_SHA-1: baa5:c0fe:46c4:f78d:4cf9:365c:4fae:1aa6:a2cf:0500
+
+# Nmap done at Tue Oct 28 11:38:30 2025 -- 1 IP address (1 host up) scanned in 0.49 seconds

@@ -1,0 +1,151 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:37:21 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -p 80,443 --script=vulners -oN nmap_scan/vscript google-gruyere.appspot.com
+Nmap scan report for google-gruyere.appspot.com (173.194.204.153)
+Host is up (0.029s latency).
+Other addresses for google-gruyere.appspot.com (not scanned): 2607:f8b0:400d:c07::99
+rDNS record for 173.194.204.153: qb-in-f153.1e100.net
+
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Google Frontend
+|_http-server-header: Google Frontend
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     Content-Length: 272
+|     Content-Type: text/html; charset=UTF-8
+|     Date: Tue, 28 Oct 2025 15:37:27 GMT
+|     <html><head>
+|     <meta http-equiv="content-type" content="text/html;charset=utf-8">
+|     <title>404 Page not found</title>
+|     </head>
+|     <body text=#000000 bgcolor=#ffffff>
+|     <h1>Error: Page not found</h1>
+|     <h2>The requested URL was not found on this server.</h2>
+|     <h2></h2>
+|     </body></html>
+|   RTSPRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Type: text/html; charset=UTF-8
+|     Referrer-Policy: no-referrer
+|     Content-Length: 1555
+|     Date: Tue, 28 Oct 2025 15:37:27 GMT
+|     <!DOCTYPE html>
+|     <html lang=en>
+|     <meta charset=utf-8>
+|     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+|     <title>Error 400 (Bad Request)!!1</title>
+|     <style>
+|_    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x
+443/tcp open  ssl/https Google Frontend
+|_http-server-header: Google Frontend
+| fingerprint-strings: 
+|   DNSStatusRequestTCP: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Length: 54
+|     Content-Type: text/html; charset=UTF-8
+|     Date: Tue, 28 Oct 2025 15:37:45 GMT
+|     <html><title>Error 400 (Bad Request)!!1</title></html>
+|   DNSVersionBindReqTCP: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Length: 54
+|     Content-Type: text/html; charset=UTF-8
+|     Date: Tue, 28 Oct 2025 15:37:44 GMT
+|     <html><title>Error 400 (Bad Request)!!1</title></html>
+|   HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     Content-Length: 272
+|     Content-Type: text/html; charset=UTF-8
+|     Date: Tue, 28 Oct 2025 15:37:33 GMT
+|     Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+|     <html><head>
+|     <meta http-equiv="content-type" content="text/html;charset=utf-8">
+|     <title>404 Page not found</title>
+|     </head>
+|     <body text=#000000 bgcolor=#ffffff>
+|     <h1>Error: Page not found</h1>
+|     <h2>The requested URL was not found on this server.</h2>
+|     <h2></h2>
+|     </body></html>
+|   Help: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Type: text/html; charset=UTF-8
+|     Referrer-Policy: no-referrer
+|     Content-Length: 1555
+|     Date: Tue, 28 Oct 2025 15:37:45 GMT
+|     <!DOCTYPE html>
+|     <html lang=en>
+|     <meta charset=utf-8>
+|     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+|     <title>Error 400 (Bad Request)!!1</title>
+|     <style>
+|_    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=10/28%Time=6900E337%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,18C,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Length:\x20272
+SF:\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Tue,\x2028
+SF:\x20Oct\x202025\x2015:37:27\x20GMT\r\n\r\n\n<html><head>\n<meta\x20http
+SF:-equiv=\"content-type\"\x20content=\"text/html;charset=utf-8\">\n<title
+SF:>404\x20Page\x20not\x20found</title>\n</head>\n<body\x20text=#000000\x2
+SF:0bgcolor=#ffffff>\n<h1>Error:\x20Page\x20not\x20found</h1>\n<h2>The\x20
+SF:requested\x20URL\x20was\x20not\x20found\x20on\x20this\x20server\.</h2>\
+SF:n<h2></h2>\n</body></html>\n")%r(HTTPOptions,18C,"HTTP/1\.0\x20404\x20N
+SF:ot\x20Found\r\nContent-Length:\x20272\r\nContent-Type:\x20text/html;\x2
+SF:0charset=UTF-8\r\nDate:\x20Tue,\x2028\x20Oct\x202025\x2015:37:27\x20GMT
+SF:\r\n\r\n\n<html><head>\n<meta\x20http-equiv=\"content-type\"\x20content
+SF:=\"text/html;charset=utf-8\">\n<title>404\x20Page\x20not\x20found</titl
+SF:e>\n</head>\n<body\x20text=#000000\x20bgcolor=#ffffff>\n<h1>Error:\x20P
+SF:age\x20not\x20found</h1>\n<h2>The\x20requested\x20URL\x20was\x20not\x20
+SF:found\x20on\x20this\x20server\.</h2>\n<h2></h2>\n</body></html>\n")%r(R
+SF:TSPRequest,6B0,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20
+SF:text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nConte
+SF:nt-Length:\x201555\r\nDate:\x20Tue,\x2028\x20Oct\x202025\x2015:37:27\x2
+SF:0GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=en>\n\x20\x20<meta\x20cha
+SF:rset=utf-8>\n\x20\x20<meta\x20name=viewport\x20content=\"initial-scale=
+SF:1,\x20minimum-scale=1,\x20width=device-width\">\n\x20\x20<title>Error\x
+SF:20400\x20\(Bad\x20Request\)!!1</title>\n\x20\x20<style>\n\x20\x20\x20\x
+SF:20\*{margin:0;padding:0}html,code{font:15px/22px\x20arial,sans-serif}ht
+SF:ml{background:#fff;color:#222;padding:15px}body{margin:7%\x20auto\x200;
+SF:max-width:390px;min-height:180px;padding:30px\x200\x2015px}\*\x20>\x20b
+SF:ody{background:url\(//www\.google\.com/images/errors/robot\.png\)\x2010
+SF:0%\x205px\x20no-repeat;padding-right:205px}p{margin:11px\x200\x2022px;o
+SF:verflow:hidden}ins{color:#777;text-decoration:none}a\x20img{border:0}@m
+SF:edia\x20screen\x20and\x20\(max-width:772px\){body{background:none;margi
+SF:n-top:0;max-width:none;padding-right:0}}#logo{background:url\(//www\.go
+SF:ogle\.com/images/branding/googlelogo/1x");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=10/28%Time=6900E33E%P=x86_64-pc-linux-gn
+SF:u%r(HTTPOptions,1C5,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Length
+SF::\x20272\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Tu
+SF:e,\x2028\x20Oct\x202025\x2015:37:33\x20GMT\r\nAlt-Svc:\x20h3=\":443\";\
+SF:x20ma=2592000,h3-29=\":443\";\x20ma=2592000\r\n\r\n\n<html><head>\n<met
+SF:a\x20http-equiv=\"content-type\"\x20content=\"text/html;charset=utf-8\"
+SF:>\n<title>404\x20Page\x20not\x20found</title>\n</head>\n<body\x20text=#
+SF:000000\x20bgcolor=#ffffff>\n<h1>Error:\x20Page\x20not\x20found</h1>\n<h
+SF:2>The\x20requested\x20URL\x20was\x20not\x20found\x20on\x20this\x20serve
+SF:r\.</h2>\n<h2></h2>\n</body></html>\n")%r(DNSVersionBindReqTCP,B3,"HTTP
+SF:/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2054\r\nContent-Type
+SF::\x20text/html;\x20charset=UTF-8\r\nDate:\x20Tue,\x2028\x20Oct\x202025\
+SF:x2015:37:44\x20GMT\r\n\r\n<html><title>Error\x20400\x20\(Bad\x20Request
+SF:\)!!1</title></html>")%r(DNSStatusRequestTCP,B3,"HTTP/1\.0\x20400\x20Ba
+SF:d\x20Request\r\nContent-Length:\x2054\r\nContent-Type:\x20text/html;\x2
+SF:0charset=UTF-8\r\nDate:\x20Tue,\x2028\x20Oct\x202025\x2015:37:45\x20GMT
+SF:\r\n\r\n<html><title>Error\x20400\x20\(Bad\x20Request\)!!1</title></htm
+SF:l>")%r(Help,6B0,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nCont
+SF:ent-Length:\x201555\r\nDate:\x20Tue,\x2028\x20Oct\x202025\x2015:37:45\x
+SF:20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=en>\n\x20\x20<meta\x20ch
+SF:arset=utf-8>\n\x20\x20<meta\x20name=viewport\x20content=\"initial-scale
+SF:=1,\x20minimum-scale=1,\x20width=device-width\">\n\x20\x20<title>Error\
+SF:x20400\x20\(Bad\x20Request\)!!1</title>\n\x20\x20<style>\n\x20\x20\x20\
+SF:x20\*{margin:0;padding:0}html,code{font:15px/22px\x20arial,sans-serif}h
+SF:tml{background:#fff;color:#222;padding:15px}body{margin:7%\x20auto\x200
+SF:;max-width:390px;min-height:180px;padding:30px\x200\x2015px}\*\x20>\x20
+SF:body{background:url\(//www\.google\.com/images/errors/robot\.png\)\x201
+SF:00%\x205px\x20no-repeat;padding-right:205px}p{margin:11px\x200\x2022px;
+SF:overflow:hidden}ins{color:#777;text-decoration:none}a\x20img{border:0}@
+SF:media\x20screen\x20and\x20\(max-width:772px\){body{background:none;marg
+SF:in-top:0;max-width:none;padding-right:0}}#logo{background:url\(//www\.g
+SF:oogle\.com/images/branding/googlelogo/1x");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 11:38:30 2025 -- 1 IP address (1 host up) scanned in 69.16 seconds

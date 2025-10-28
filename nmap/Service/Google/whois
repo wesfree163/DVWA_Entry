@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:38:33 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script whois-ip -oN nmap_scan/whois google-gruyere.appspot.com
+Nmap scan report for google-gruyere.appspot.com (173.194.204.153)
+Host is up (0.033s latency).
+Other addresses for google-gruyere.appspot.com (not scanned): 2607:f8b0:400d:c07::99
+rDNS record for 173.194.204.153: qb-in-f153.1e100.net
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| whois-ip: Record found at whois.arin.net
+| netrange: 173.194.0.0 - 173.194.255.255
+| netname: GOOGLE
+| orgname: Google LLC
+| orgid: GOGL
+| country: US stateprov: CA
+| orgtechname: Google LLC
+|_orgtechemail: arin-contact@google.com
+
+# Nmap done at Tue Oct 28 11:38:33 2025 -- 1 IP address (1 host up) scanned in 0.37 seconds
