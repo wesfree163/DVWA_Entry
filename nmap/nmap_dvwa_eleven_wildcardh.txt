@@ -1,4 +1,0 @@
-# Nmap 7.95 scan initiated Sun Oct 26 21:52:46 2025 as: /usr/lib/nmap/nmap --privileged -p 80,443 --script h* -oN nmap_dvwa_eleven_wildcardh.txt demo.testfire.net
-Pre-scan script results:
-|_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
-|_hostmap-robtex: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
