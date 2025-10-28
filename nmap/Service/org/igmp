@@ -1,0 +1,48 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:02:28 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-igmp-discovery -oN nmap_scan/igmp hackthissite.org
+Pre-scan script results:
+| broadcast-igmp-discovery: 
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.1.178
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.178
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.1.178
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.253
+|     Description: Teredo (rfc4380)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.1.179
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+Nmap scan report for hackthissite.org (137.74.187.102)
+Host is up (0.11s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.100 137.74.187.101 137.74.187.104 137.74.187.103
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 11:02:38 2025 -- 1 IP address (1 host up) scanned in 10.22 seconds

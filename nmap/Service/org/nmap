@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:06:18 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -sC -p 80,443 -T3 -oN nmap_scan/nmap hackthissite.org
+Nmap scan report for hackthissite.org (137.74.187.104)
+Host is up (0.12s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.103 137.74.187.102 137.74.187.100 137.74.187.101
+
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     HAProxy http proxy 1.3.1 - 1.9.0
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+|_http-open-proxy: Proxy might be redirecting requests
+443/tcp open  ssl/http-proxy HAProxy http proxy 1.3.1 - 1.9.0
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+|_http-server-header: HackThisSite
+| ssl-cert: Subject: commonName=hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion
+| Subject Alternative Name: DNS:hackthissite.org, DNS:www.hackthissite.org, DNS:hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion
+| Not valid before: 2025-03-25T04:43:22
+|_Not valid after:  2026-03-25T04:43:22
+Service Info: Device: load balancer
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 11:07:55 2025 -- 1 IP address (1 host up) scanned in 97.22 seconds

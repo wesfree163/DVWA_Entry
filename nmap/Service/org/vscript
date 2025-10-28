@@ -1,0 +1,25 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:05:18 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -p 80,443 --script=vulners -oN nmap_scan/vscript hackthissite.org
+Nmap scan report for hackthissite.org (137.74.187.101)
+Host is up (0.11s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.104 137.74.187.103 137.74.187.102 137.74.187.100
+
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 301 Moved Permanently
+|     Content-length: 0
+|     Location: https:///
+|_    Connection: close
+443/tcp open  ssl/http-proxy HAProxy http proxy 1.3.1 - 1.9.0
+|_http-server-header: HackThisSite
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.95%I=7%D=10/28%Time=6900DBB4%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nContent-length:
+SF:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n")%r(HTT
+SF:POptions,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nContent-length
+SF::\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n");
+Service Info: Device: load balancer
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 11:06:08 2025 -- 1 IP address (1 host up) scanned in 49.96 seconds

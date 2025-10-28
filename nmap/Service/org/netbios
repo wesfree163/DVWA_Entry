@@ -1,0 +1,13 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:03:09 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-netbios-master-browser -oN nmap_scan/netbios hackthissite.org
+Pre-scan script results:
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+Nmap scan report for hackthissite.org (137.74.187.104)
+Host is up (0.11s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.103 137.74.187.102 137.74.187.100 137.74.187.101
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 11:03:14 2025 -- 1 IP address (1 host up) scanned in 5.54 seconds

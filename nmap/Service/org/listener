@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:02:38 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-listener -oN nmap_scan/listener hackthissite.org
+Pre-scan script results:
+| broadcast-listener: 
+|   ether
+|       ARP Request
+|         sender ip    sender mac         target ip
+|_        192.168.1.1  c8:99:b2:7a:98:81  192.168.1.179
+Nmap scan report for hackthissite.org (137.74.187.103)
+Host is up (0.11s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.102 137.74.187.100 137.74.187.101 137.74.187.104
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 11:03:09 2025 -- 1 IP address (1 host up) scanned in 30.68 seconds

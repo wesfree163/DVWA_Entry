@@ -1,0 +1,22 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:06:17 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script whois-ip -oN nmap_scan/whois hackthissite.org
+Nmap scan report for hackthissite.org (137.74.187.103)
+Host is up (0.11s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.102 137.74.187.100 137.74.187.101 137.74.187.104
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| whois-ip: Record found at whois.ripe.net
+| inetnum: 137.74.187.96 - 137.74.187.127
+| netname: OVH_113911647
+| descr: OVH Static IP
+| country: NL
+| orgname: Staff HackThisSite
+| organisation: ORG-SH80-RIPE
+| email: admin@hackthissite.org
+| role: OVH NL Technical Contact
+|_email: noc@ovh.net
+
+# Nmap done at Tue Oct 28 11:06:18 2025 -- 1 IP address (1 host up) scanned in 0.91 seconds

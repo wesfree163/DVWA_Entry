@@ -1,0 +1,43 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:04:23 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-security-headers,http-csrf -oN nmap_scan/http_one hackthissite.org
+Nmap scan report for hackthissite.org (137.74.187.100)
+Host is up (0.12s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.101 137.74.187.104 137.74.187.103 137.74.187.102
+
+Bug in http-security-headers: no string output.
+PORT    STATE SERVICE
+80/tcp  open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+443/tcp open  https
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     Header: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   Public_Key_Pins_Report_Only: 
+|     Header: Public-Key-Pins-Report-Only: pin-sha256="YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg="; pin-sha256="Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys="; max-age=2592000; includeSubDomains; report-uri="https://hackthissite.report-uri.com/r/d/hpkp/reportOnly"
+|   X_XSS_Protection: 
+|     Header: X-XSS-Protection: 0
+|     Description: The XSS filter is disabled.
+|   Content_Security_Policy: 
+|     Header: Content-Security-Policy: child-src 'self' hackthissite.org *.hackthissite.org htscdn.org *.htscdn.org discord.com; form-action 'self' hackthissite.org *.hackthissite.org htscdn.org *.htscdn.org; upgrade-insecure-requests; report-uri https://hackthissite.report-uri.com/r/d/csp/enforce
+|     Description: Define from where the protected resource can embed frames.
+|     Description: Define which URIs can be used as the action of HTML form elements.
+|     Description: Instructs user agent to download insecure resources using HTTPS.
+|     Description: Specifies a URI to which the user agent sends reports about policy violation.
+|   Cache_Control: 
+|     Header: Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Pragma: 
+|     Header: Pragma: no-cache
+|   Expires: 
+|_    Header: Expires: Thu, 19 Nov 1981 08:52:00 GMT
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=hackthissite.org
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://hackthissite.org:443/
+|     Form id: loginform
+|     Form action: /user/login
+|     
+|     Path: https://hackthissite.org:443/info/billofrights
+|     Form id: loginform
+|_    Form action: /user/login
+
+# Nmap done at Tue Oct 28 11:05:01 2025 -- 1 IP address (1 host up) scanned in 38.04 seconds

@@ -1,0 +1,9 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:05:01 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script http-title,http-headers -oN nmap_scan/http_two hackthissite.org
+Nmap scan report for hackthissite.org (137.74.187.104)
+Host is up (0.12s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.103 137.74.187.102 137.74.187.100 137.74.187.101
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Tue Oct 28 11:05:18 2025 -- 1 IP address (1 host up) scanned in 16.64 seconds

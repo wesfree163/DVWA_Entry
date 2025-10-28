@@ -1,0 +1,23 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:02:17 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-dhcp-discover -oN nmap_scan/dhcp hackthissite.org
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     Interface: eth0
+|     IP Offered: 192.168.1.172
+|     DHCP Message Type: DHCPOFFER
+|     Server Identifier: 192.168.1.1
+|     IP Address Lease Time: 1d00h00m00s
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.1.1
+|     Domain Name Server: 192.168.1.1
+|     Domain Name: mynetworksettings.com
+|_    NetBIOS Name Server: 0.0.0.0
+Nmap scan report for hackthissite.org (137.74.187.100)
+Host is up (0.12s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.101 137.74.187.104 137.74.187.103 137.74.187.102
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 11:02:28 2025 -- 1 IP address (1 host up) scanned in 10.53 seconds

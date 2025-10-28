@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:06:08 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-cert -oN nmap_scan/certification hackthissite.org
+Nmap scan report for hackthissite.org (137.74.187.100)
+Host is up (0.13s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.101 137.74.187.104 137.74.187.103 137.74.187.102
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-cert: Subject: commonName=hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion
+| Subject Alternative Name: DNS:hackthissite.org, DNS:www.hackthissite.org, DNS:hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion
+| Issuer: commonName=HARICA DV TLS RSA/organizationName=Hellenic Academic and Research Institutions CA/countryName=GR
+| Public Key type: rsa
+| Public Key bits: 4096
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-03-25T04:43:22
+| Not valid after:  2026-03-25T04:43:22
+| MD5:   d7af:6ce2:af75:a95a:6b71:a576:a15d:01ca
+|_SHA-1: 3fce:023d:5383:4831:e471:434a:3a99:cdac:06af:e20c
+
+# Nmap done at Tue Oct 28 11:06:09 2025 -- 1 IP address (1 host up) scanned in 1.04 seconds

@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:03:46 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-auth-finder -oN nmap_scan/httpauth hackthissite.org
+Nmap scan report for hackthissite.org (137.74.187.101)
+Host is up (0.12s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.104 137.74.187.103 137.74.187.102 137.74.187.100
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=hackthissite.org
+|   url                                         method
+|   https://hackthissite.org:443/               FORM
+|   https://www.hackthissite.org:443/advertise  FORM
+|_  https://www.hackthissite.org:443/donate/    FORM
+
+# Nmap done at Tue Oct 28 11:04:15 2025 -- 1 IP address (1 host up) scanned in 28.67 seconds

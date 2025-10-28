@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:04:15 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script=http-form-brute -oN nmap_scan/httpform " --script-args=userdb=users.txt,passdb=passwds.txt,brute.threads=2" hackthissite.org
+Failed to resolve " --script-args=userdb=users.txt,passdb=passwds.txt,brute.threads=2".
+Nmap scan report for hackthissite.org (137.74.187.101)
+Host is up (0.11s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.104 137.74.187.103 137.74.187.102 137.74.187.100
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Tue Oct 28 11:04:23 2025 -- 1 IP address (1 host up) scanned in 8.04 seconds

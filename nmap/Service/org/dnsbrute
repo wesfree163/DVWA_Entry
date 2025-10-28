@@ -1,0 +1,34 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:03:23 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=dns-brute -oN nmap_scan/dnsbrute hackthissite.org
+Nmap scan report for hackthissite.org (137.74.187.102)
+Host is up (0.11s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.100 137.74.187.101 137.74.187.104 137.74.187.103
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| dns-brute: 
+|   DNS Brute-force hostnames: 
+|     stats.hackthissite.org - 137.74.187.135
+|     stats.hackthissite.org - 137.74.187.136
+|     stats.hackthissite.org - 2001:41d0:8:ccd8:137:74:187:135
+|     stats.hackthissite.org - 2001:41d0:8:ccd8:137:74:187:136
+|     www.hackthissite.org - 137.74.187.100
+|     www.hackthissite.org - 137.74.187.101
+|     www.hackthissite.org - 137.74.187.102
+|     www.hackthissite.org - 137.74.187.103
+|     www.hackthissite.org - 137.74.187.104
+|     mirror.hackthissite.org - 137.74.187.133
+|     mirror.hackthissite.org - 137.74.187.134
+|     mirror.hackthissite.org - 2001:41d0:8:ccd8:137:74:187:133
+|     mirror.hackthissite.org - 2001:41d0:8:ccd8:137:74:187:134
+|     forum.hackthissite.org - 137.74.187.100
+|     forum.hackthissite.org - 137.74.187.101
+|     forum.hackthissite.org - 137.74.187.102
+|     forum.hackthissite.org - 137.74.187.103
+|     forum.hackthissite.org - 137.74.187.104
+|     git.hackthissite.org - 137.74.187.145
+|_    git.hackthissite.org - 2001:41d0:8:ccd8:137:74:187:145
+
+# Nmap done at Tue Oct 28 11:03:46 2025 -- 1 IP address (1 host up) scanned in 23.05 seconds
