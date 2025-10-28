@@ -17,5 +17,6 @@ nmap --privileged -p -O -sV -p 80,443 -oN nmap_scan/operating_system $@
 nmap --privileged  -sV -p 80,443 --script=vulners -oN nmap_scan/vscript $@
 nmap --privileged -p 80,443 --script ssl-cert -oN nmap_scan/certification $@
 nmap --privileged -p 80,443 --script ssl-enum-ciphers -oN nmap_scan/enumeration $@ 
+nmap --privileged -p 80,443 --script=targets-ipv6-multicast-echo,targets-ipv6-multicast-invalid-dst,targets-ipv6-multicast-slaac,targets-ipv6-multicast-mid -oN nmap_scan/acquisition $@
 nmap --privileged -p 80,443 --script whois-ip -oN nmap_scan/whois $@
 nmap --privileged -sV -sC -p 80,443 -T3 -oN nmap_scan/nmap $@
