@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:17:00 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-cert -oN nmap_scan/certification zero.webappsecurity.com
+Nmap scan report for zero.webappsecurity.com (54.82.22.214)
+Host is up (0.031s latency).
+rDNS record for 54.82.22.214: ec2-54-82-22-214.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-cert: Subject: commonName=zero.webappsecurity.com/organizationName=Micro Focus LLC/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:zero.webappsecurity.com
+| Issuer: commonName=DigiCert TLS RSA SHA256 2020 CA1/organizationName=DigiCert Inc/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-04-26T00:00:00
+| Not valid after:  2022-05-04T23:59:59
+| MD5:   a3c7:6d49:e492:0890:859a:d111:889e:5d53
+|_SHA-1: 38b7:1430:838e:0e8e:7d92:44a3:4610:5640:1ec8:ad0d
+
+# Nmap done at Tue Oct 28 11:17:00 2025 -- 1 IP address (1 host up) scanned in 0.48 seconds

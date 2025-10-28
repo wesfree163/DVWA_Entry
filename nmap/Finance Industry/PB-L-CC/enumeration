@@ -1,0 +1,73 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:17:00 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-enum-ciphers -oN nmap_scan/enumeration zero.webappsecurity.com
+Nmap scan report for zero.webappsecurity.com (54.82.22.214)
+Host is up (0.031s latency).
+rDNS record for 54.82.22.214: ec2-54-82-22-214.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-enum-ciphers: 
+|   SSLv3: 
+|     ciphers: 
+|       TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA (dh 512) - E
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_DES_CBC_SHA (dh 1024) - D
+|       TLS_RSA_EXPORT_WITH_DES40_CBC_SHA (rsa 64) - E
+|       TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (rsa 64) - E
+|       TLS_RSA_EXPORT_WITH_RC4_40_MD5 (rsa 64) - E
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_DES_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|     compressors: 
+|       DEFLATE
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES40 vulnerable to SWEET32 attack
+|       64-bit block cipher RC2 vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       CBC-mode cipher in SSLv3 (CVE-2014-3566)
+|       Ciphersuite uses MD5 for message integrity
+|       Export key exchange
+|       Key exchange (dh 1024) of lower strength than certificate key
+|       Key exchange (rsa 64) of lower strength than certificate key
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA (dh 512) - E
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_DES_CBC_SHA (dh 1024) - D
+|       TLS_RSA_EXPORT_WITH_DES40_CBC_SHA (rsa 64) - E
+|       TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (rsa 64) - E
+|       TLS_RSA_EXPORT_WITH_RC4_40_MD5 (rsa 64) - E
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_DES_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|     compressors: 
+|       DEFLATE
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES40 vulnerable to SWEET32 attack
+|       64-bit block cipher RC2 vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|       Export key exchange
+|       Key exchange (dh 1024) of lower strength than certificate key
+|       Key exchange (rsa 64) of lower strength than certificate key
+|_  least strength: E
+
+# Nmap done at Tue Oct 28 11:17:03 2025 -- 1 IP address (1 host up) scanned in 2.38 seconds

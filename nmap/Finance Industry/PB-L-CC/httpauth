@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:16:41 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-auth-finder -oN nmap_scan/httpauth zero.webappsecurity.com
+Nmap scan report for zero.webappsecurity.com (54.82.22.214)
+Host is up (0.031s latency).
+rDNS record for 54.82.22.214: ec2-54-82-22-214.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 11:16:43 2025 -- 1 IP address (1 host up) scanned in 2.05 seconds

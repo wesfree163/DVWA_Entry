@@ -1,0 +1,28 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:16:44 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-security-headers,http-csrf -oN nmap_scan/http_one zero.webappsecurity.com
+Nmap scan report for zero.webappsecurity.com (54.82.22.214)
+Host is up (0.037s latency).
+rDNS record for 54.82.22.214: ec2-54-82-22-214.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+| http-security-headers: 
+|   Cache_Control: 
+|_    Header: Cache-Control: no-cache, max-age=0, must-revalidate, no-store
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=zero.webappsecurity.com
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://zero.webappsecurity.com:80/
+|     Form id: searchterm
+|     Form action: /search.html
+|     
+|     Path: http://zero.webappsecurity.com:80/index.html
+|     Form id: searchterm
+|_    Form action: /search.html
+443/tcp open  https
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|_    HSTS not configured in HTTPS Server
+
+# Nmap done at Tue Oct 28 11:16:46 2025 -- 1 IP address (1 host up) scanned in 2.00 seconds

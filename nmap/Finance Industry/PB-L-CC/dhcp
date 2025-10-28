@@ -1,0 +1,23 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:15:34 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-dhcp-discover -oN nmap_scan/dhcp zero.webappsecurity.com
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     Interface: eth0
+|     IP Offered: 192.168.1.172
+|     DHCP Message Type: DHCPOFFER
+|     Server Identifier: 192.168.1.1
+|     IP Address Lease Time: 1d00h00m00s
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.1.1
+|     Domain Name Server: 192.168.1.1
+|     Domain Name: mynetworksettings.com
+|_    NetBIOS Name Server: 0.0.0.0
+Nmap scan report for zero.webappsecurity.com (54.82.22.214)
+Host is up (0.032s latency).
+rDNS record for 54.82.22.214: ec2-54-82-22-214.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 11:15:44 2025 -- 1 IP address (1 host up) scanned in 10.40 seconds
