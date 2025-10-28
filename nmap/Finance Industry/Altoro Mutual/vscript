@@ -1,0 +1,12 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:17:52 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -p 80,443 --script=vulners -oN nmap_scan/vscript demo.testfire.net
+Nmap scan report for demo.testfire.net (65.61.137.117)
+Host is up (0.041s latency).
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+443/tcp open  ssl/http Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 10:18:06 2025 -- 1 IP address (1 host up) scanned in 14.38 seconds

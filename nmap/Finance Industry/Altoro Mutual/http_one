@@ -1,0 +1,177 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:17:46 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-security-headers,http-csrf -oN nmap_scan/http_one demo.testfire.net
+Nmap scan report for demo.testfire.net (65.61.137.117)
+Host is up (0.040s latency).
+
+Bug in http-security-headers: no string output.
+PORT    STATE SERVICE
+80/tcp  open  http
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=demo.testfire.net
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://demo.testfire.net:80/
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=business_retirement.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=personal_loans.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=business_lending.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=personal.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=inside.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=security.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/search.jsp
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=business_other.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=inside_about.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/login.jsp
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/login.jsp
+|     Form id: login
+|     Form action: doLogin
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=business.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=privacy.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=business_cards.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=personal_cards.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=personal_other.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/survey_questions.jsp
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp?content=personal_deposit.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: http://demo.testfire.net:80/index.jsp
+|     Form id: frmsearch
+|_    Form action: /search.jsp
+443/tcp open  https
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     HSTS not configured in HTTPS Server
+|   Cookie: 
+|_    Cookies are secured with Secure Flag in HTTPS Connection
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=demo.testfire.net
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://demo.testfire.net:443/
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=business.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=inside.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=business_cards.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=business_retirement.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/survey_questions.jsp
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=personal_loans.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=inside_about.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/default.jsp?content=security.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=privacy.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=inside_contact.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=personal_savings.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=inside_investor.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/subscribe.jsp
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/subscribe.jsp
+|     Form id: subscribe
+|     Form action: doSubscribe
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=personal.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=business_deposit.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=personal_cards.htm
+|     Form id: frmsearch
+|     Form action: /search.jsp
+|     
+|     Path: https://demo.testfire.net:443/index.jsp?content=personal_investments.htm
+|     Form id: frmsearch
+|_    Form action: /search.jsp
+
+# Nmap done at Tue Oct 28 10:17:51 2025 -- 1 IP address (1 host up) scanned in 5.19 seconds

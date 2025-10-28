@@ -1,0 +1,52 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:18:07 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-enum-ciphers -oN nmap_scan/enumeration demo.testfire.net
+Nmap scan report for demo.testfire.net (65.61.137.117)
+Host is up (0.036s latency).
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-enum-ciphers: 
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       Key exchange (dh 1024) of lower strength than certificate key
+|   TLSv1.1: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       Key exchange (dh 1024) of lower strength than certificate key
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 (dh 1024) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       Key exchange (dh 1024) of lower strength than certificate key
+|_  least strength: A
+
+# Nmap done at Tue Oct 28 10:18:09 2025 -- 1 IP address (1 host up) scanned in 2.81 seconds

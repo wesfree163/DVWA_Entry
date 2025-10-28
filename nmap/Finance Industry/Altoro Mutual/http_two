@@ -1,0 +1,18 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:17:51 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script http-title,http-headers -oN nmap_scan/http_two demo.testfire.net
+Nmap scan report for demo.testfire.net (65.61.137.117)
+Host is up (0.045s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-headers: 
+|   Server: Apache-Coyote/1.1
+|   Set-Cookie: JSESSIONID=37241BEB33DB64542B9E26DAACA904CB; Path=/; HttpOnly
+|   Content-Type: text/html;charset=ISO-8859-1
+|   Transfer-Encoding: chunked
+|   Date: Tue, 28 Oct 2025 14:17:51 GMT
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+|_http-title: Altoro Mutual
+
+# Nmap done at Tue Oct 28 10:17:52 2025 -- 1 IP address (1 host up) scanned in 0.62 seconds

@@ -1,0 +1,15 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:16:54 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-listener -oN nmap_scan/listener demo.testfire.net
+Pre-scan script results:
+| broadcast-listener: 
+|   ether
+|       ARP Request
+|         sender ip    sender mac         target ip
+|_        192.168.1.1  c8:99:b2:7a:98:81  192.168.1.186
+Nmap scan report for demo.testfire.net (65.61.137.117)
+Host is up (0.044s latency).
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 10:17:24 2025 -- 1 IP address (1 host up) scanned in 30.37 seconds

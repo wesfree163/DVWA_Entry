@@ -1,0 +1,15 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:17:38 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=dns-blacklist -oN nmap_scan/dns_blacklist demo.testfire.net
+Nmap scan report for demo.testfire.net (65.61.137.117)
+Host is up (0.039s latency).
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| dns-blacklist: 
+|   SPAM
+|     list.quorum.to - SPAM
+|_    l2.apews.org - FAIL
+
+# Nmap done at Tue Oct 28 10:17:39 2025 -- 1 IP address (1 host up) scanned in 0.95 seconds

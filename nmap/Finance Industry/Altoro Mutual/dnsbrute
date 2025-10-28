@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:17:39 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=dns-brute -oN nmap_scan/dnsbrute demo.testfire.net
+Nmap scan report for demo.testfire.net (65.61.137.117)
+Host is up (0.040s latency).
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| dns-brute: 
+|   DNS Brute-force hostnames: 
+|     www.testfire.net - 65.61.137.117
+|     ftp.testfire.net - 65.61.137.117
+|_    demo.testfire.net - 65.61.137.117
+
+# Nmap done at Tue Oct 28 10:17:41 2025 -- 1 IP address (1 host up) scanned in 1.87 seconds
