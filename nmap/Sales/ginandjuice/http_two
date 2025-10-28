@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 09:55:23 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script http-title,http-headers -oN nmap_scan/http_two ginandjuice.shop
+Nmap scan report for ginandjuice.shop (34.249.203.140)
+Host is up (0.11s latency).
+Other addresses for ginandjuice.shop (not scanned): 34.246.169.176
+rDNS record for 34.249.203.140: ec2-34-249-203-140.eu-west-1.compute.amazonaws.com
+
+PORT   STATE SERVICE
+80/tcp open  http
+|_http-title: Did not follow redirect to https://ginandjuice.shop:443/
+| http-headers: 
+|   Server: awselb/2.0
+|   Date: Tue, 28 Oct 2025 13:55:25 GMT
+|   Content-Type: text/html
+|   Content-Length: 110
+|   Connection: close
+|   Location: https://ginandjuice.shop:443/
+|   
+|_  (Request type: GET)
+
+# Nmap done at Tue Oct 28 09:55:25 2025 -- 1 IP address (1 host up) scanned in 1.16 seconds

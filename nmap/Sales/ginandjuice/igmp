@@ -1,0 +1,54 @@
+# Nmap 7.95 scan initiated Tue Oct 28 09:53:54 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-igmp-discovery -oN nmap_scan/igmp ginandjuice.shop
+Pre-scan script results:
+| broadcast-igmp-discovery: 
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.1.157
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.179
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.179
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.1.178
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.253
+|     Description: Teredo (rfc4380)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.1.157
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+Nmap scan report for ginandjuice.shop (34.246.169.176)
+Host is up (0.12s latency).
+Other addresses for ginandjuice.shop (not scanned): 34.249.203.140
+rDNS record for 34.246.169.176: ec2-34-246-169-176.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 09:54:02 2025 -- 1 IP address (1 host up) scanned in 7.64 seconds

@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 09:54:02 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-listener -oN nmap_scan/listener ginandjuice.shop
+Pre-scan script results:
+| broadcast-listener: 
+|   ether
+|       ARP Request
+|         sender ip    sender mac         target ip
+|         192.168.1.1  c8:99:b2:7a:98:81  192.168.1.167
+|       EIGRP Update
+|         
+|_  udp
+Nmap scan report for ginandjuice.shop (34.249.203.140)
+Host is up (0.12s latency).
+Other addresses for ginandjuice.shop (not scanned): 34.246.169.176
+rDNS record for 34.249.203.140: ec2-34-249-203-140.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 09:54:32 2025 -- 1 IP address (1 host up) scanned in 30.61 seconds

@@ -1,0 +1,24 @@
+# Nmap 7.95 scan initiated Tue Oct 28 09:53:44 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-dhcp-discover -oN nmap_scan/dhcp ginandjuice.shop
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     Interface: eth0
+|     IP Offered: 192.168.1.172
+|     DHCP Message Type: DHCPOFFER
+|     Server Identifier: 192.168.1.1
+|     IP Address Lease Time: 1d00h00m00s
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.1.1
+|     Domain Name Server: 192.168.1.1
+|     Domain Name: mynetworksettings.com
+|_    NetBIOS Name Server: 0.0.0.0
+Nmap scan report for ginandjuice.shop (34.246.169.176)
+Host is up (0.12s latency).
+Other addresses for ginandjuice.shop (not scanned): 34.249.203.140
+rDNS record for 34.246.169.176: ec2-34-246-169-176.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 09:53:54 2025 -- 1 IP address (1 host up) scanned in 10.61 seconds

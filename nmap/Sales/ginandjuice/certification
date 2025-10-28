@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Tue Oct 28 09:55:48 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-cert -oN nmap_scan/certification ginandjuice.shop
+Nmap scan report for ginandjuice.shop (34.249.203.140)
+Host is up (0.13s latency).
+Other addresses for ginandjuice.shop (not scanned): 34.246.169.176
+rDNS record for 34.249.203.140: ec2-34-249-203-140.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-cert: Subject: commonName=ginandjuice.shop
+| Subject Alternative Name: DNS:ginandjuice.shop, DNS:*.ginandjuice.shop
+| Issuer: commonName=Amazon RSA 2048 M03/organizationName=Amazon/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-12-22T00:00:00
+| Not valid after:  2026-01-21T23:59:59
+| MD5:   4a1a:10fa:9783:432e:f7af:0299:681b:595a
+|_SHA-1: 91e8:a48e:7700:bd77:3015:f5d7:06fe:f22f:df73:ea56
+
+# Nmap done at Tue Oct 28 09:55:49 2025 -- 1 IP address (1 host up) scanned in 0.85 seconds

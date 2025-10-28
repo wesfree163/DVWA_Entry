@@ -1,0 +1,26 @@
+# Nmap 7.95 scan initiated Tue Oct 28 09:55:49 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-enum-ciphers -oN nmap_scan/enumeration ginandjuice.shop
+Nmap scan report for ginandjuice.shop (34.246.169.176)
+Host is up (0.15s latency).
+Other addresses for ginandjuice.shop (not scanned): 34.249.203.140
+rDNS record for 34.246.169.176: ec2-34-246-169-176.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-enum-ciphers: 
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|_  least strength: A
+
+# Nmap done at Tue Oct 28 09:55:56 2025 -- 1 IP address (1 host up) scanned in 7.39 seconds

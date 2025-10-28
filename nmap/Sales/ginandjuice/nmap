@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Tue Oct 28 09:55:57 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -sC -p 80,443 -T3 -oN nmap_scan/nmap ginandjuice.shop
+Nmap scan report for ginandjuice.shop (34.249.203.140)
+Host is up (0.12s latency).
+Other addresses for ginandjuice.shop (not scanned): 34.246.169.176
+rDNS record for 34.249.203.140: ec2-34-249-203-140.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+|_http-title: Did not follow redirect to https://ginandjuice.shop:443/
+|_http-server-header: awselb/2.0
+443/tcp open  ssl/http nginx
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+| ssl-cert: Subject: commonName=ginandjuice.shop
+| Subject Alternative Name: DNS:ginandjuice.shop, DNS:*.ginandjuice.shop
+| Not valid before: 2024-12-22T00:00:00
+|_Not valid after:  2026-01-21T23:59:59
+|_http-title: Home - Gin &amp; Juice Shop
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 09:56:24 2025 -- 1 IP address (1 host up) scanned in 26.97 seconds

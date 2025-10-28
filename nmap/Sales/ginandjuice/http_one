@@ -1,0 +1,59 @@
+# Nmap 7.95 scan initiated Tue Oct 28 09:55:08 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-security-headers,http-csrf -oN nmap_scan/http_one ginandjuice.shop
+Nmap scan report for ginandjuice.shop (34.249.203.140)
+Host is up (0.12s latency).
+Other addresses for ginandjuice.shop (not scanned): 34.246.169.176
+rDNS record for 34.249.203.140: ec2-34-249-203-140.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+| http-security-headers: 
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|_    Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+443/tcp open  https
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=ginandjuice.shop
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://ginandjuice.shop:443/catalog/product?productId=3
+|     Form id: stockcheckform
+|     Form action: /catalog/product/stock
+|     
+|     Path: https://ginandjuice.shop:443/catalog/product?productId=3
+|     Form id: addtocartform
+|     Form action: /catalog/cart
+|     
+|     Path: https://ginandjuice.shop:443/catalog/product?productId=2
+|     Form id: stockcheckform
+|     Form action: /catalog/product/stock
+|     
+|     Path: https://ginandjuice.shop:443/catalog/product?productId=2
+|     Form id: addtocartform
+|     Form action: /catalog/cart
+|     
+|     Path: https://ginandjuice.shop:443/catalog/product?productId=1
+|     Form id: stockcheckform
+|     Form action: /catalog/product/stock
+|     
+|     Path: https://ginandjuice.shop:443/catalog/product?productId=1
+|     Form id: addtocartform
+|     Form action: /catalog/cart
+|     
+|     Path: https://ginandjuice.shop:443/blog
+|     Form id: 
+|     Form action: /blog/
+|     
+|     Path: https://ginandjuice.shop:443/catalog
+|     Form id: searchbar
+|_    Form action: /catalog
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     HSTS not configured in HTTPS Server
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   Cookie: 
+|_    Cookies are secured with Secure Flag in HTTPS Connection
+
+# Nmap done at Tue Oct 28 09:55:23 2025 -- 1 IP address (1 host up) scanned in 15.13 seconds
