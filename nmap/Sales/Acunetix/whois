@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:09:50 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script whois-ip -oN nmap_scan/whois testphp.vulnweb.com
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.095s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+
+PORT    STATE    SERVICE
+80/tcp  open     http
+443/tcp filtered https
+
+Host script results:
+| whois-ip: Record found at whois.arin.net
+| netrange: 44.224.0.0 - 44.255.255.255
+| netname: AMAZO-ZPDX
+| orgname: Amazon.com, Inc.
+| orgid: AMAZO-47
+| country: US stateprov: WA
+| orgtechname: Amazon EC2 Network Operations
+|_orgtechemail: amzn-noc-contact@amazon.com
+
+# Nmap done at Tue Oct 28 10:09:53 2025 -- 1 IP address (1 host up) scanned in 2.28 seconds

@@ -1,0 +1,23 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:07:53 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-dhcp-discover -oN nmap_scan/dhcp testphp.vulnweb.com
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     Interface: eth0
+|     IP Offered: 192.168.1.172
+|     DHCP Message Type: DHCPOFFER
+|     Server Identifier: 192.168.1.1
+|     IP Address Lease Time: 1d00h00m00s
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.1.1
+|     Domain Name Server: 192.168.1.1
+|     Domain Name: mynetworksettings.com
+|_    NetBIOS Name Server: 0.0.0.0
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.095s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+
+PORT    STATE    SERVICE
+80/tcp  open     http
+443/tcp filtered https
+
+# Nmap done at Tue Oct 28 10:08:05 2025 -- 1 IP address (1 host up) scanned in 12.17 seconds

@@ -1,0 +1,31 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:08:54 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-upnp-info -oN nmap_scan/upnp testphp.vulnweb.com
+Pre-scan script results:
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: OpenWRT/19.07-SNAPSHOT UPnP/1.1 MiniUPnPd/2.2.0
+|       Location: http://192.168.1.1:34127/rootDesc.xml
+|         Webserver: OpenWRT/19.07-SNAPSHOT UPnP/1.1 MiniUPnPd/2.2.0
+|         Name: Verizon Internet Gateway
+|         Manufacturer: Verizon
+|         Model Descr: Verizon Internet Gateway
+|         Model Name: XCI55AX
+|         Model Version: XCI55AX
+|         Name: Verizon Internet Gateway
+|         Manufacturer: Verizon
+|         Model Descr: Verizon Internet Gateway
+|         Model Name: XCI55AX
+|         Model Version: XCI55AX
+|         Name: Verizon Internet Gateway
+|         Manufacturer: Verizon
+|         Model Descr: Verizon Internet Gateway
+|         Model Name: XCI55AX
+|_        Model Version: XCI55AX
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.093s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+
+PORT    STATE    SERVICE
+80/tcp  open     http
+443/tcp filtered https
+
+# Nmap done at Tue Oct 28 10:09:03 2025 -- 1 IP address (1 host up) scanned in 9.22 seconds

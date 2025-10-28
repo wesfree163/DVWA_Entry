@@ -1,0 +1,14 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:09:07 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=dns-brute -oN nmap_scan/dnsbrute testphp.vulnweb.com
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.092s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+
+PORT    STATE    SERVICE
+80/tcp  open     http
+443/tcp filtered https
+
+Host script results:
+| dns-brute: 
+|_  DNS Brute-force hostnames: No results.
+
+# Nmap done at Tue Oct 28 10:09:15 2025 -- 1 IP address (1 host up) scanned in 8.13 seconds

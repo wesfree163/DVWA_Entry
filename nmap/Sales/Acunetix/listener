@@ -1,0 +1,17 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:08:14 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-listener -oN nmap_scan/listener testphp.vulnweb.com
+Pre-scan script results:
+| broadcast-listener: 
+|   ether
+|       ARP Request
+|         sender ip    sender mac         target ip
+|         192.168.1.1  c8:99:b2:7a:98:81  192.168.1.186
+|_  udp
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.12s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+
+PORT    STATE    SERVICE
+80/tcp  open     http
+443/tcp filtered https
+
+# Nmap done at Tue Oct 28 10:08:47 2025 -- 1 IP address (1 host up) scanned in 32.43 seconds

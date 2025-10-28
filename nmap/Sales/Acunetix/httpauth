@@ -1,0 +1,15 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:09:15 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-auth-finder -oN nmap_scan/httpauth testphp.vulnweb.com
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.092s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+
+PORT    STATE    SERVICE
+80/tcp  open     http
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=testphp.vulnweb.com
+|   url                                         method
+|   http://testphp.vulnweb.com:80/login.php     FORM
+|_  http://testphp.vulnweb.com:80/userinfo.php  FORM
+443/tcp filtered https
+
+# Nmap done at Tue Oct 28 10:09:21 2025 -- 1 IP address (1 host up) scanned in 6.13 seconds

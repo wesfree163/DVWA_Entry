@@ -1,0 +1,13 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:09:53 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -sC -p 80,443 -T3 -oN nmap_scan/nmap testphp.vulnweb.com
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.093s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+
+PORT    STATE    SERVICE VERSION
+80/tcp  open     http    nginx 1.19.0
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+|_http-title: Home of Acunetix Art
+443/tcp filtered https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 10:10:13 2025 -- 1 IP address (1 host up) scanned in 20.59 seconds

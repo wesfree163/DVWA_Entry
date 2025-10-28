@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:09:46 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-cert -oN nmap_scan/certification testphp.vulnweb.com
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.097s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+
+PORT    STATE    SERVICE
+80/tcp  open     http
+443/tcp filtered https
+
+# Nmap done at Tue Oct 28 10:09:48 2025 -- 1 IP address (1 host up) scanned in 2.32 seconds

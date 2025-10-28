@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:09:21 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script=http-form-brute -oN nmap_scan/httpform " --script-args=userdb=users.txt,passdb=passwds.txt,brute.threads=2" testphp.vulnweb.com
+Failed to resolve " --script-args=userdb=users.txt,passdb=passwds.txt,brute.threads=2".
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.094s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Tue Oct 28 10:09:22 2025 -- 1 IP address (1 host up) scanned in 0.77 seconds
