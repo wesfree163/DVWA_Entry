@@ -1,0 +1,18 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:29:15 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=dns-brute -oN nmap_scan/dnsbrute vulnbank.org
+Nmap scan report for vulnbank.org (104.21.5.243)
+Host is up (0.024s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3036::6815:5f3 2606:4700:3033::ac43:860b 172.67.134.11
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| dns-brute: 
+|   DNS Brute-force hostnames: 
+|     www.vulnbank.org - 104.21.5.243
+|     www.vulnbank.org - 172.67.134.11
+|     www.vulnbank.org - 2606:4700:3033::ac43:860b
+|_    www.vulnbank.org - 2606:4700:3036::6815:5f3
+
+# Nmap done at Tue Oct 28 10:29:17 2025 -- 1 IP address (1 host up) scanned in 1.94 seconds

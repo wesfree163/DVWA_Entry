@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:22:44 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p- -oN nmap_scan/all_port_scan_ts vulnbank.org
+Nmap scan report for vulnbank.org (172.67.134.11)
+Host is up (0.035s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3033::ac43:860b 2606:4700:3036::6815:5f3 104.21.5.243
+Not shown: 65523 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+2052/tcp open  clearvisn
+2053/tcp open  knetd
+2082/tcp open  infowave
+2083/tcp open  radsec
+2086/tcp open  gnunet
+2087/tcp open  eli
+2095/tcp open  nbx-ser
+2096/tcp open  nbx-dir
+8080/tcp open  http-proxy
+8880/tcp open  cddbp-alt
+
+# Nmap done at Tue Oct 28 10:28:07 2025 -- 1 IP address (1 host up) scanned in 322.81 seconds

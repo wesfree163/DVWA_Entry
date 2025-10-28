@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:29:57 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script whois-ip -oN nmap_scan/whois vulnbank.org
+Nmap scan report for vulnbank.org (104.21.5.243)
+Host is up (0.027s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3036::6815:5f3 2606:4700:3033::ac43:860b 172.67.134.11
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| whois-ip: Record found at whois.arin.net
+| netrange: 104.16.0.0 - 104.31.255.255
+| netname: CLOUDFLARENET
+| orgname: Cloudflare, Inc.
+| orgid: CLOUD14
+| country: US stateprov: CA
+| orgtechname: Admin
+|_orgtechemail: rir@cloudflare.com
+
+# Nmap done at Tue Oct 28 10:29:57 2025 -- 1 IP address (1 host up) scanned in 0.35 seconds

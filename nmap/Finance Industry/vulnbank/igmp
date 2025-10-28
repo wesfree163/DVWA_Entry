@@ -1,0 +1,48 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:28:23 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-igmp-discovery -oN nmap_scan/igmp vulnbank.org
+Pre-scan script results:
+| broadcast-igmp-discovery: 
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.1.157
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.178
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.1.178
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.253
+|     Description: Teredo (rfc4380)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.1.157
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+Nmap scan report for vulnbank.org (172.67.134.11)
+Host is up (0.024s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3033::ac43:860b 2606:4700:3036::6815:5f3 104.21.5.243
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 10:28:30 2025 -- 1 IP address (1 host up) scanned in 7.44 seconds

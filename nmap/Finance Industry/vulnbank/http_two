@@ -1,0 +1,25 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:29:39 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script http-title,http-headers -oN nmap_scan/http_two vulnbank.org
+Nmap scan report for vulnbank.org (104.21.5.243)
+Host is up (0.022s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3036::6815:5f3 2606:4700:3033::ac43:860b 172.67.134.11
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-headers: 
+|   Date: Tue, 28 Oct 2025 14:29:40 GMT
+|   Content-Type: text/html; charset=utf-8
+|   Connection: close
+|   Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+|   Access-Control-Allow-Origin: *
+|   Server: cloudflare
+|   cf-cache-status: DYNAMIC
+|   Server-Timing: cfCacheStatus;desc="DYNAMIC"
+|   Server-Timing: cfEdge;dur=5,cfOrigin;dur=236
+|   Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xDAtwa%2Bx%2BauGqUuF5O5czFQiN%2BmKwduQesHpTjxeOuuwSix4oM2uk%2BVOmQXkhf6Q2x3DtG%2FDYLFly%2FPYYfALWHb3dKLXuV04IqMBBQ%3D%3D"}]}
+|   CF-RAY: 995b206d9a7cb0ae-MIA
+|   alt-svc: h3=":443"; ma=86400
+|   
+|_  (Request type: HEAD)
+|_http-title: Vulnerable Bank
+
+# Nmap done at Tue Oct 28 10:29:40 2025 -- 1 IP address (1 host up) scanned in 1.13 seconds

@@ -1,0 +1,23 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:28:07 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-dhcp-discover -oN nmap_scan/dhcp vulnbank.org
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     Interface: eth0
+|     IP Offered: 192.168.1.172
+|     DHCP Message Type: DHCPOFFER
+|     Server Identifier: 192.168.1.1
+|     IP Address Lease Time: 1d00h00m00s
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.1.1
+|     Domain Name Server: 192.168.1.1
+|     Domain Name: mynetworksettings.com
+|_    NetBIOS Name Server: 0.0.0.0
+Nmap scan report for vulnbank.org (104.21.5.243)
+Host is up (0.028s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3033::ac43:860b 2606:4700:3036::6815:5f3 172.67.134.11
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 10:28:23 2025 -- 1 IP address (1 host up) scanned in 15.46 seconds
