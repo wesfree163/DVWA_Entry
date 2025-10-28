@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:52:37 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-cert -oN nmap_scan/certification juice-shop.herokuapp.com
+Nmap scan report for juice-shop.herokuapp.com (54.73.53.134)
+Host is up (0.12s latency).
+Other addresses for juice-shop.herokuapp.com (not scanned): 46.137.15.86 54.220.192.176
+rDNS record for 54.73.53.134: ec2-54-73-53-134.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-cert: Subject: commonName=*.herokuapp.com
+| Subject Alternative Name: DNS:*.herokuapp.com
+| Issuer: commonName=Amazon RSA 2048 M02/organizationName=Amazon/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-01-31T00:00:00
+| Not valid after:  2026-03-01T23:59:59
+| MD5:   2019:2251:448f:17cb:5c8d:8516:6f8f:4d15
+|_SHA-1: 9c24:b60f:7d05:b78a:6036:f67e:8647:3d98:6c2a:a104
+
+# Nmap done at Tue Oct 28 11:52:51 2025 -- 1 IP address (1 host up) scanned in 14.84 seconds

@@ -1,0 +1,33 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:48:48 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-security-headers,http-csrf -oN nmap_scan/http_one juice-shop.herokuapp.com
+Nmap scan report for juice-shop.herokuapp.com (54.220.192.176)
+Host is up (0.12s latency).
+Other addresses for juice-shop.herokuapp.com (not scanned): 46.137.15.86 54.73.53.134
+rDNS record for 54.220.192.176: ec2-54-220-192-176.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+| http-security-headers: 
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|     Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|   Cache_Control: 
+|_    Header: Cache-Control: public, max-age=0
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+443/tcp open  https
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     HSTS not configured in HTTPS Server
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|     Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|   Cache_Control: 
+|_    Header: Cache-Control: public, max-age=0
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+# Nmap done at Tue Oct 28 11:49:17 2025 -- 1 IP address (1 host up) scanned in 29.06 seconds

@@ -1,0 +1,44 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:47:04 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-igmp-discovery -oN nmap_scan/igmp juice-shop.herokuapp.com
+Pre-scan script results:
+| broadcast-igmp-discovery: 
+|   192.168.1.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.1.157
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.1.178
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.253
+|     Description: Teredo (rfc4380)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+Nmap scan report for juice-shop.herokuapp.com (46.137.15.86)
+Host is up (0.12s latency).
+Other addresses for juice-shop.herokuapp.com (not scanned): 54.73.53.134 54.220.192.176
+rDNS record for 46.137.15.86: ec2-46-137-15-86.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 11:47:11 2025 -- 1 IP address (1 host up) scanned in 7.61 seconds

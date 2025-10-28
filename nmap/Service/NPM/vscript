@@ -1,0 +1,91 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:49:32 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -p 80,443 --script=vulners -oN nmap_scan/vscript juice-shop.herokuapp.com
+Nmap scan report for juice-shop.herokuapp.com (54.73.53.134)
+Host is up (0.12s latency).
+Other addresses for juice-shop.herokuapp.com (not scanned): 54.220.192.176 46.137.15.86
+rDNS record for 54.73.53.134: ec2-54-73-53-134.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      heroku-router
+| http-server-header: 
+|   Heroku
+|_  heroku-router
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2025-10-28 15:49:50.232259321 +0000 UTC
+|     Server: heroku-router
+|     Content-Length: 0
+|   GetRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2025-10-28 15:49:39.496385532 +0000 UTC
+|     Server: heroku-router
+|     Content-Length: 0
+|   HTTPOptions: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2025-10-28 15:49:39.756247878 +0000 UTC
+|     Server: heroku-router
+|_    Content-Length: 0
+443/tcp open  ssl/https heroku-router
+| http-server-header: 
+|   Heroku
+|_  heroku-router
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2025-10-28 15:49:50.936838158 +0000 UTC
+|     Server: heroku-router
+|     Content-Length: 0
+|   GetRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2025-10-28 15:49:45.996535018 +0000 UTC
+|     Server: heroku-router
+|     Content-Length: 0
+|   HTTPOptions: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2025-10-28 15:49:48.47188894 +0000 UTC
+|     Server: heroku-router
+|_    Content-Length: 0
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=10/28%Time=6900E613%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,C0,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-
+SF:cache,\x20no-store\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nD
+SF:ate:\x202025-10-28\x2015:49:39\.496385532\x20\+0000\x20UTC\r\nServer:\x
+SF:20heroku-router\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,C0,"HTT
+SF:P/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-st
+SF:ore\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202025-10
+SF:-28\x2015:49:39\.756247878\x20\+0000\x20UTC\r\nServer:\x20heroku-router
+SF:\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,C0,"HTTP/1\.0\x2
+SF:0400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store\r\nCo
+SF:ntent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202025-10-28\x2015
+SF::49:50\.232259321\x20\+0000\x20UTC\r\nServer:\x20heroku-router\r\nConte
+SF:nt-Length:\x200\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=10/28%Time=6900E61C%P=x86_64-pc-linux-gn
+SF:u%r(GetRequest,C0,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:
+SF:\x20no-cache,\x20no-store\r\nContent-Type:\x20text/html;\x20charset=utf
+SF:-8\r\nDate:\x202025-10-28\x2015:49:45\.996535018\x20\+0000\x20UTC\r\nSe
+SF:rver:\x20heroku-router\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,
+SF:BF,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x
+SF:20no-store\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x20
+SF:2025-10-28\x2015:49:48\.47188894\x20\+0000\x20UTC\r\nServer:\x20heroku-
+SF:router\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,C0,"HTTP/1
+SF:\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store
+SF:\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202025-10-28
+SF:\x2015:49:50\.936838158\x20\+0000\x20UTC\r\nServer:\x20heroku-router\r\
+SF:nContent-Length:\x200\r\n\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 11:52:37 2025 -- 1 IP address (1 host up) scanned in 184.34 seconds

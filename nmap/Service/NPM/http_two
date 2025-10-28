@@ -1,0 +1,33 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:49:17 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script http-title,http-headers -oN nmap_scan/http_two juice-shop.herokuapp.com
+Nmap scan report for juice-shop.herokuapp.com (54.220.192.176)
+Host is up (0.12s latency).
+Other addresses for juice-shop.herokuapp.com (not scanned): 46.137.15.86 54.73.53.134
+rDNS record for 54.220.192.176: ec2-54-220-192-176.eu-west-1.compute.amazonaws.com
+
+PORT   STATE SERVICE
+80/tcp open  http
+|_http-title: OWASP Juice Shop
+| http-headers: 
+|   Accept-Ranges: bytes
+|   Access-Control-Allow-Origin: *
+|   Cache-Control: public, max-age=0
+|   Content-Length: 75002
+|   Content-Type: text/html; charset=UTF-8
+|   Date: Tue, 28 Oct 2025 15:49:32 GMT
+|   Etag: W/"124fa-19a2b7eef0d"
+|   Feature-Policy: payment 'self'
+|   Last-Modified: Tue, 28 Oct 2025 15:45:30 GMT
+|   Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+|   Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=gQbtiaZhMMqMk1%2Fyu2ZRXep6diTEf13wpE9gGbVim%2F4%3D\u0026sid=812dcc77-0bd0-43b1-a5f1-b25750382959\u0026ts=1761666572"}],"max_age":3600}
+|   Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=gQbtiaZhMMqMk1%2Fyu2ZRXep6diTEf13wpE9gGbVim%2F4%3D&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&ts=1761666572"
+|   Server: Heroku
+|   Vary: Accept-Encoding
+|   Via: 1.1 heroku-router
+|   X-Content-Type-Options: nosniff
+|   X-Frame-Options: SAMEORIGIN
+|   X-Recruiting: /#/jobs
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+
+# Nmap done at Tue Oct 28 11:49:32 2025 -- 1 IP address (1 host up) scanned in 15.53 seconds

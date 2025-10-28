@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:53:06 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script whois-ip -oN nmap_scan/whois juice-shop.herokuapp.com
+Nmap scan report for juice-shop.herokuapp.com (54.220.192.176)
+Host is up (0.12s latency).
+Other addresses for juice-shop.herokuapp.com (not scanned): 54.73.53.134 46.137.15.86
+rDNS record for 54.220.192.176: ec2-54-220-192-176.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| whois-ip: Record found at whois.arin.net
+| netrange: 54.220.0.0 - 54.220.255.255
+| netname: AMAZO-ZDUB4
+| orgname: Amazon.com, Inc.
+| orgid: AMAZO-4
+| country: US stateprov: WA
+| orgtechname: Amazon EC2 Network Operations
+|_orgtechemail: amzn-noc-contact@amazon.com
+
+# Nmap done at Tue Oct 28 11:53:07 2025 -- 1 IP address (1 host up) scanned in 0.72 seconds

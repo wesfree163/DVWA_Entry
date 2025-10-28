@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Tue Oct 28 11:47:48 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-upnp-info -oN nmap_scan/upnp juice-shop.herokuapp.com
+Pre-scan script results:
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Microsoft-Windows/10.0 UPnP/1.0 UPnP-Device-Host/1.0
+|       Location: http://192.168.1.178:2869/upnphost/udhisapi.dll?content=uuid:6932bfea-7019-4c6c-8972-a35f7711abeb
+|         Webserver: Microsoft-Windows/10.0 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0
+|         Name: XBOX
+|         Manufacturer: Microsoft Corporation
+|         Model Descr: Digital Media Renderer
+|_        Model Name: Xbox One
+Nmap scan report for juice-shop.herokuapp.com (54.220.192.176)
+Host is up (0.12s latency).
+Other addresses for juice-shop.herokuapp.com (not scanned): 46.137.15.86 54.73.53.134
+rDNS record for 54.220.192.176: ec2-54-220-192-176.eu-west-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 11:47:56 2025 -- 1 IP address (1 host up) scanned in 8.41 seconds
