@@ -1,0 +1,17 @@
+# Nmap 7.95 scan initiated Mon Oct 27 23:20:43 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=dns-blacklist -oN nmap_scan/dns_blacklist vulnbank.org
+Nmap scan report for vulnbank.org (104.21.5.243)
+Host is up (0.034s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3036::6815:5f3 2606:4700:3033::ac43:860b 172.67.134.11
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| dns-blacklist: 
+|   SPAM
+|     l2.apews.org - FAIL
+|     bl.nszones.com - FAIL
+|_    list.quorum.to - SPAM
+
+# Nmap done at Mon Oct 27 23:20:44 2025 -- 1 IP address (1 host up) scanned in 1.03 seconds

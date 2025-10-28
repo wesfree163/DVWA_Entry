@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Mon Oct 27 23:20:57 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script=http-form-brute -oN nmap_scan/httpform " --script-args=userdb=users.txt,passdb=passwds.txt,brute.threads=2" vulnbank.org
+Failed to resolve " --script-args=userdb=users.txt,passdb=passwds.txt,brute.threads=2".
+Nmap scan report for vulnbank.org (172.67.134.11)
+Host is up (0.030s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3033::ac43:860b 2606:4700:3036::6815:5f3 104.21.5.243
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Mon Oct 27 23:20:58 2025 -- 1 IP address (1 host up) scanned in 0.74 seconds

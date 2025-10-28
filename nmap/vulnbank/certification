@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Mon Oct 27 23:21:24 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-cert -oN nmap_scan/certification vulnbank.org
+Nmap scan report for vulnbank.org (172.67.134.11)
+Host is up (0.032s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3033::ac43:860b 2606:4700:3036::6815:5f3 104.21.5.243
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-cert: Subject: commonName=vulnbank.org
+| Subject Alternative Name: DNS:vulnbank.org, DNS:*.vulnbank.org
+| Issuer: commonName=WE1/organizationName=Google Trust Services/countryName=US
+| Public Key type: ec
+| Public Key bits: 256
+| Signature Algorithm: ecdsa-with-SHA256
+| Not valid before: 2025-09-02T11:07:39
+| Not valid after:  2025-12-01T12:06:10
+| MD5:   eee0:7411:d78c:1786:62aa:98c3:28d0:b78d
+|_SHA-1: 0eff:423a:e118:8c07:c0db:5be1:e2ec:22f8:4769:3864
+
+# Nmap done at Mon Oct 27 23:21:25 2025 -- 1 IP address (1 host up) scanned in 0.43 seconds

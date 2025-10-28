@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Mon Oct 27 23:20:58 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-security-headers,http-csrf -oN nmap_scan/http_one vulnbank.org
+Nmap scan report for vulnbank.org (104.21.5.243)
+Host is up (0.027s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3036::6815:5f3 2606:4700:3033::ac43:860b 172.67.134.11
+
+Bug in http-security-headers: no string output.
+PORT    STATE SERVICE
+80/tcp  open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+443/tcp open  https
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|_    HSTS not configured in HTTPS Server
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+# Nmap done at Mon Oct 27 23:21:09 2025 -- 1 IP address (1 host up) scanned in 11.38 seconds

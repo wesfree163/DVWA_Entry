@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Mon Oct 27 23:21:27 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -sC -p 80,443 -T3 -oN nmap_scan/nmap vulnbank.org
+Nmap scan report for vulnbank.org (104.21.5.243)
+Host is up (0.033s latency).
+Other addresses for vulnbank.org (not scanned): 2606:4700:3036::6815:5f3 2606:4700:3033::ac43:860b 172.67.134.11
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cloudflare http proxy
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+|_http-title: Vulnerable Bank
+|_http-server-header: cloudflare
+443/tcp open  ssl/http Cloudflare http proxy
+|_http-server-header: cloudflare
+| ssl-cert: Subject: commonName=vulnbank.org
+| Subject Alternative Name: DNS:vulnbank.org, DNS:*.vulnbank.org
+| Not valid before: 2025-09-02T11:07:39
+|_Not valid after:  2025-12-01T12:06:10
+|_http-title: Vulnerable Bank
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 27 23:21:46 2025 -- 1 IP address (1 host up) scanned in 18.49 seconds
