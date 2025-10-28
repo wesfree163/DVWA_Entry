@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:51:50 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -p 80,443 --script=vulners -oN nmap_scan/vscript bugbait.io
+Nmap scan report for bugbait.io (3.25.57.22)
+Host is up (0.21s latency).
+rDNS record for 3.25.57.22: ec2-3-25-57-22.ap-southeast-2.compute.amazonaws.com
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx 1.27.2
+| vulners: 
+|   nginx 1.27.2: 
+|     	NGINX:CVE-2025-53859	6.3	https://vulners.com/nginx/NGINX:CVE-2025-53859
+|_    	NGINX:CVE-2025-23419	5.3	https://vulners.com/nginx/NGINX:CVE-2025-23419
+|_http-server-header: nginx/1.27.2
+443/tcp open  ssl/http nginx 1.27.2
+|_http-server-header: nginx/1.27.2
+| vulners: 
+|   nginx 1.27.2: 
+|     	NGINX:CVE-2025-53859	6.3	https://vulners.com/nginx/NGINX:CVE-2025-53859
+|_    	NGINX:CVE-2025-23419	5.3	https://vulners.com/nginx/NGINX:CVE-2025-23419
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 10:52:08 2025 -- 1 IP address (1 host up) scanned in 17.49 seconds

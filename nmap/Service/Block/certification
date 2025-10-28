@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:52:08 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script ssl-cert -oN nmap_scan/certification bugbait.io
+Nmap scan report for bugbait.io (3.25.57.22)
+Host is up (0.21s latency).
+rDNS record for 3.25.57.22: ec2-3-25-57-22.ap-southeast-2.compute.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+| ssl-cert: Subject: commonName=bugbait.io
+| Subject Alternative Name: DNS:bugbait.io, DNS:www.bugbait.io
+| Issuer: commonName=R11/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-05-25T04:39:43
+| Not valid after:  2025-08-23T04:39:42
+| MD5:   46a0:c086:c4a2:71df:381a:61b1:05a3:bce9
+|_SHA-1: 3fbb:cd75:9cb0:a792:fe20:d59f:6429:fdab:a11f:c583
+
+# Nmap done at Tue Oct 28 10:52:09 2025 -- 1 IP address (1 host up) scanned in 1.13 seconds

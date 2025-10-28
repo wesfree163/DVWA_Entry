@@ -1,0 +1,22 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:52:17 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -sC -p 80,443 -T3 -oN nmap_scan/nmap bugbait.io
+Nmap scan report for bugbait.io (3.25.57.22)
+Host is up (0.22s latency).
+rDNS record for 3.25.57.22: ec2-3-25-57-22.ap-southeast-2.compute.amazonaws.com
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx 1.27.2
+|_http-server-header: nginx/1.27.2
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+|_http-title: Did not follow redirect to https://bugbait.io/
+443/tcp open  ssl/http nginx 1.27.2
+| ssl-cert: Subject: commonName=bugbait.io
+| Subject Alternative Name: DNS:bugbait.io, DNS:www.bugbait.io
+| Not valid before: 2025-05-25T04:39:43
+|_Not valid after:  2025-08-23T04:39:42
+|_http-title: Welcome to BugBait (Vulnerable Web Application) by BlackLock
+|_http-server-header: nginx/1.27.2
+|_ssl-date: TLS randomness does not represent time
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 10:52:42 2025 -- 1 IP address (1 host up) scanned in 25.13 seconds

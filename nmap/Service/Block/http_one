@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:51:30 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-security-headers,http-csrf -oN nmap_scan/http_one bugbait.io
+Nmap scan report for bugbait.io (3.25.57.22)
+Host is up (0.21s latency).
+rDNS record for 3.25.57.22: ec2-3-25-57-22.ap-southeast-2.compute.amazonaws.com
+
+Bug in http-security-headers: no string output.
+PORT    STATE SERVICE
+80/tcp  open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+443/tcp open  https
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|_    HSTS not configured in HTTPS Server
+
+# Nmap done at Tue Oct 28 10:51:49 2025 -- 1 IP address (1 host up) scanned in 18.77 seconds

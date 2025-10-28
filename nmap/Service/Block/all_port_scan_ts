@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Tue Oct 28 10:42:05 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p- -oN nmap_scan/all_port_scan_ts bugbait.io
+Nmap scan report for bugbait.io (3.25.57.22)
+Host is up (0.21s latency).
+rDNS record for 3.25.57.22: ec2-3-25-57-22.ap-southeast-2.compute.amazonaws.com
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 10:50:04 2025 -- 1 IP address (1 host up) scanned in 478.66 seconds
