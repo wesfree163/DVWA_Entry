@@ -1,0 +1,32 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:13:16 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -sC -p 80,443 -T3 -oN nmap_scan/nmap aspnet.testsparker.com
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.042s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+
+PORT    STATE SERVICE VERSION
+80/tcp  open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| http-robots.txt: 2 disallowed entries 
+|_/statics/ /panel/
+|_http-title: Bitcoin Web Site
+| http-server-header: 
+|   Microsoft-HTTPAPI/2.0
+|_  Microsoft-IIS/8.5
+|_http-generator: Bootply
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+443/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-generator: Bootply
+| http-server-header: 
+|   Microsoft-HTTPAPI/2.0
+|_  Microsoft-IIS/8.5
+|_http-title: Bitcoin Web Site
+|_vulscan: ERROR: Script execution failed (use -d to debug)
+| http-robots.txt: 2 disallowed entries 
+|_/statics/ /panel/
+| http-methods: 
+|_  Potentially risky methods: TRACE
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 12:13:29 2025 -- 1 IP address (1 host up) scanned in 13.10 seconds

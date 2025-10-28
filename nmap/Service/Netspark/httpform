@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:12:55 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script=http-form-brute -oN nmap_scan/httpform " --script-args=userdb=users.txt,passdb=passwds.txt,brute.threads=2" aspnet.testsparker.com
+Failed to resolve " --script-args=userdb=users.txt,passdb=passwds.txt,brute.threads=2".
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.030s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Tue Oct 28 12:12:56 2025 -- 1 IP address (1 host up) scanned in 0.42 seconds

@@ -1,0 +1,23 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:13:02 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80 --script http-title,http-headers -oN nmap_scan/http_two aspnet.testsparker.com
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.033s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-headers: 
+|   Cache-Control: private
+|   Content-Length: 4443
+|   Content-Type: text/html; charset=utf-8
+|   Server: Microsoft-IIS/8.5
+|   Set-Cookie: ASP.NET_SessionId=qzyxfy040nmczxace24gevoz; path=/; HttpOnly; SameSite=Lax
+|   X-AspNet-Version: 4.0.30319
+|   Set-Cookie: TestCookie=Hello; path=/
+|   X-Powered-By: ASP.NET
+|   Date: Tue, 28 Oct 2025 16:13:01 GMT
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+|_http-title: Bitcoin Web Site
+
+# Nmap done at Tue Oct 28 12:13:02 2025 -- 1 IP address (1 host up) scanned in 0.47 seconds

@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:02:49 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p- -oN nmap_scan/all_port_scan_ts aspnet.testsparker.com
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.032s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 12:11:33 2025 -- 1 IP address (1 host up) scanned in 524.30 seconds

@@ -1,0 +1,18 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:13:02 2025 as: /usr/lib/nmap/nmap --privileged --privileged -sV -p 80,443 --script=vulners -oN nmap_scan/vscript aspnet.testsparker.com
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.033s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+
+PORT    STATE SERVICE VERSION
+80/tcp  open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| http-server-header: 
+|   Microsoft-HTTPAPI/2.0
+|_  Microsoft-IIS/8.5
+443/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| http-server-header: 
+|   Microsoft-HTTPAPI/2.0
+|_  Microsoft-IIS/8.5
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 12:13:11 2025 -- 1 IP address (1 host up) scanned in 8.37 seconds

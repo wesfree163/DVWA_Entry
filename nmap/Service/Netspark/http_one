@@ -1,0 +1,176 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:12:56 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=http-security-headers,http-csrf -oN nmap_scan/http_one aspnet.testsparker.com
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.031s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=aspnet.testsparker.com
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://aspnet.testsparker.com:80/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:80/Contact.aspx
+|     Form id: form1
+|     Form action: ./Contact.aspx
+|     
+|     Path: http://aspnet.testsparker.com:80/Shop.aspx
+|     Form id: form1
+|     Form action: ./Shop.aspx
+|     
+|     Path: http://aspnet.testsparker.com:80/Default.aspx
+|     Form id: form1
+|     Form action: ./Default.aspx
+|     
+|     Path: http://aspnet.testsparker.com:80/Converter.aspx
+|     Form id: form1
+|     Form action: ./Converter.aspx
+|     
+|     Path: http://aspnet.testsparker.com:80/Guestbook.aspx
+|     Form id: form1
+|     Form action: ./Guestbook.aspx
+|     
+|     Path: http://aspnet.testsparker.com:80/Blogs.aspx
+|     Form id: form1
+|     Form action: ./Blogs.aspx
+|     
+|     Path: http://aspnet.testsparker.com:80/administrator/Login.aspx
+|     Form id: form1
+|     Form action: ./Login.aspx?r=%2fDashboard%2f
+|     
+|     Path: http://aspnet.testsparker.com:80/Help.aspx
+|     Form id: form1
+|     Form action: ./Help.aspx
+|     
+|     Path: http://aspnet.testsparker.com:80/Request.aspx?r=/statics/download/
+|     Form id: form1
+|     Form action: ./Request.aspx?r=%2fstatics%2fdownload%2f
+|     
+|     Path: http://aspnet.testsparker.com:80/Request.aspx?r=/statics/download/
+|     Form id: demo-request-form
+|     Form action: /statics/download/
+|     
+|     Path: http://aspnet.testsparker.com:80/Products.aspx?pId=3
+|     Form id: form1
+|     Form action: ./Products.aspx?pId=3
+|     
+|     Path: http://aspnet.testsparker.com:80/Products.aspx?pId=4
+|     Form id: form1
+|     Form action: ./Products.aspx?pId=4
+|     
+|     Path: http://aspnet.testsparker.com:80/Pricings.aspx
+|     Form id: form1
+|     Form action: ./Pricings.aspx
+|     
+|     Path: http://aspnet.testsparker.com:80/blog/what-are-the-advantages-of-bitcoin-67/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:80/blog/is-bitcoin-fully-virtual-and-immaterial-94/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:80/blog/is-bitcoin-anonymous-50/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:80/blog/what-are-the-advantages-of-bitcoin-87/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:80/blog/is-bitcoin-really-used-by-people-81/
+|     Form id: form1
+|_    Form action: ./
+| http-security-headers: 
+|   Cache_Control: 
+|_    Header: Cache-Control: private
+443/tcp open  https
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     HSTS not configured in HTTPS Server
+|   Cache_Control: 
+|_    Header: Cache-Control: private
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=aspnet.testsparker.com
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://aspnet.testsparker.com:443/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:443/Guestbook.aspx
+|     Form id: form1
+|     Form action: ./Guestbook.aspx
+|     
+|     Path: http://aspnet.testsparker.com:443/Blogs.aspx
+|     Form id: form1
+|     Form action: ./Blogs.aspx
+|     
+|     Path: http://aspnet.testsparker.com:443/Converter.aspx
+|     Form id: form1
+|     Form action: ./Converter.aspx
+|     
+|     Path: http://aspnet.testsparker.com:443/Shop.aspx
+|     Form id: form1
+|     Form action: ./Shop.aspx
+|     
+|     Path: http://aspnet.testsparker.com:443/administrator/Login.aspx
+|     Form id: form1
+|     Form action: ./Login.aspx?r=%2fDashboard%2f
+|     
+|     Path: http://aspnet.testsparker.com:443/Request.aspx?r=/statics/download/
+|     Form id: form1
+|     Form action: ./Request.aspx?r=%2fstatics%2fdownload%2f
+|     
+|     Path: http://aspnet.testsparker.com:443/Request.aspx?r=/statics/download/
+|     Form id: demo-request-form
+|     Form action: /statics/download/
+|     
+|     Path: http://aspnet.testsparker.com:443/Help.aspx
+|     Form id: form1
+|     Form action: ./Help.aspx
+|     
+|     Path: http://aspnet.testsparker.com:443/Default.aspx
+|     Form id: form1
+|     Form action: ./Default.aspx
+|     
+|     Path: http://aspnet.testsparker.com:443/Contact.aspx
+|     Form id: form1
+|     Form action: ./Contact.aspx
+|     
+|     Path: http://aspnet.testsparker.com:443/blog/how-does-bitcoin-work-63/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:443/blog/is-bitcoin-anonymous-85/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:443/blog/what-are-the-advantages-of-bitcoin-82/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:443/blog/is-bitcoin-really-used-by-people-41/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:443/blog/is-bitcoin-anonymous-75/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:443/blog/is-bitcoin-really-used-by-people-61/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:443/blog/how-does-bitcoin-work-83/
+|     Form id: form1
+|     Form action: ./
+|     
+|     Path: http://aspnet.testsparker.com:443/blog/is-bitcoin-really-used-by-people-66/
+|     Form id: form1
+|_    Form action: ./
+
+# Nmap done at Tue Oct 28 12:13:02 2025 -- 1 IP address (1 host up) scanned in 5.88 seconds

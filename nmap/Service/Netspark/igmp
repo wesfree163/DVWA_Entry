@@ -1,0 +1,38 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:11:45 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=broadcast-igmp-discovery -oN nmap_scan/igmp aspnet.testsparker.com
+Pre-scan script results:
+| broadcast-igmp-discovery: 
+|   192.168.1.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.1.178
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.253
+|     Description: Teredo (rfc4380)
+|   192.168.1.155
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.031s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 28 12:11:54 2025 -- 1 IP address (1 host up) scanned in 8.51 seconds

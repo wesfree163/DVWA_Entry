@@ -1,0 +1,15 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:12:43 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=dns-brute -oN nmap_scan/dnsbrute aspnet.testsparker.com
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.034s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| dns-brute: 
+|   DNS Brute-force hostnames: 
+|_    www.testsparker.com - 54.204.37.212
+
+# Nmap done at Tue Oct 28 12:12:48 2025 -- 1 IP address (1 host up) scanned in 4.91 seconds

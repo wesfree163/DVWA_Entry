@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:12:40 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script=dns-blacklist -oN nmap_scan/dns_blacklist aspnet.testsparker.com
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.030s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| dns-blacklist: 
+|   SPAM
+|     list.quorum.to - SPAM
+|_    l2.apews.org - FAIL
+
+# Nmap done at Tue Oct 28 12:12:43 2025 -- 1 IP address (1 host up) scanned in 2.98 seconds

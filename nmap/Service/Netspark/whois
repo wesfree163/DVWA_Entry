@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Tue Oct 28 12:13:14 2025 as: /usr/lib/nmap/nmap --privileged --privileged -p 80,443 --script whois-ip -oN nmap_scan/whois aspnet.testsparker.com
+Nmap scan report for aspnet.testsparker.com (54.204.37.212)
+Host is up (0.067s latency).
+rDNS record for 54.204.37.212: ec2-54-204-37-212.compute-1.amazonaws.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Host script results:
+| whois-ip: Record found at whois.arin.net
+| netrange: 54.204.0.0 - 54.205.255.255
+| netname: AMAZO-ZIAD7
+| orgname: Amazon.com, Inc.
+| orgid: AMAZO-4
+| country: US stateprov: WA
+| orgtechname: Amazon EC2 Network Operations
+|_orgtechemail: amzn-noc-contact@amazon.com
+
+# Nmap done at Tue Oct 28 12:13:16 2025 -- 1 IP address (1 host up) scanned in 1.78 seconds
