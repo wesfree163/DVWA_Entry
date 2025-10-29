@@ -30,3 +30,11 @@ curl -L https://demo.testfire.net -o /root/demo_homepage.html
 
 # gobuster directory discovery (wordlist-based)
 gobuster dir -u https://demo.testfire.net -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o /root/demo_gobuster.txt -t 20
+
+# ----------------------------------------------------------------------------------------
+# Step 7
+# In msfconsole interactive:
+workspace demo_testfire
+workspace -d demo_testfire    # deletes the workspace
+# Or manually delete logs:
+rm /root/demo_*   # be deliberate with deletes; archive first
