@@ -1,0 +1,50 @@
+# scan_demo.rc - Metasploit headless reconnaissance script
+spool /root/demo_testfire_msf.log
+
+workspace -a demo_testfire
+workspace demo_testfire
+
+# Generic settings
+setg RHOSTS demo.testfire.net
+# for https targets set RPORT 443 and setg SSL true (see below)
+
+# 1) Basic HTTP fingerprinting
+use auxiliary/scanner/http/http_version
+run
+
+use auxiliary/scanner/http/http_title
+run
+
+use auxiliary/scanner/http/robots_txt
+run
+
+use auxiliary/scanner/http/http_headers
+run
+
+# 2) Virtual host detection
+use auxiliary/scanner/http/vhost_scanner
+set THREADS 10
+run
+
+# 3) Directory / file discovery (wordlist-driven; not destructive)
+use auxiliary/scanner/http/dir_scanner
+set THREADS 12
+# Wordlist: change to a custom list if you want
+set WORDLIST /usr/share/wordlists/dirb/common.txt
+run
+
+# 4) CMS / app-specific enumerators (safe detection)
+# Examples; only run ones relevant to observed tech
+use auxiliary/scanner/http/wordpress_scanner
+run
+
+use auxiliary/scanner/http/phpmyadmin_enum
+run
+
+# 5) Extra: attempt to detect login forms (non-bruteforce)
+use auxiliary/scanner/http/form_fingerprint
+run
+
+# Done
+spool off
+exit
